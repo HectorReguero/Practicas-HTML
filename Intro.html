@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Panquesitos</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        /* Estilo de header */
+        header {
+            background-color: #ea8ff2;
+            background-image:url("https://a-static.besthdwallpaper.com/macarons-franceses-de-color-pastel-en-fondo-rosa-y-azul-papel-pintado-2560x1600-60485_7.jpg");
+
+            padding: 40px;
+            text-align: left;
+            font-size: 35px;
+            color: white;
+        }
+
+        /* Crear 2 columnas con la misma posición en la fila */
+        nav {
+            float: left;
+            width: 15%;
+            height: 300px;
+            /* only for demonstration, should be removed */
+            background: #ccc;
+            padding: 20px;
+        }
+
+        nav ul {
+            list-style-type: decimal;
+            padding: 30%;
+            font-size: 20px;
+            text-align: center;
+            line-height: 1.8;
+        }
+
+        div {
+            float: left;
+            padding: 20px;
+            width: 85%;
+            background-color: #f1f1f1;
+            height: 300px;
+        }
+        table {
+            width: 100%;
+            height: 50%;
+            table-layout: fixed;
+            text-align: center;
+            
+        }
+        img{
+            width: 150px;
+            height: auto;
+        }
+
+        /* Clear floats after the columns */
+        section::after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        /* Estilo de footer */
+        footer {
+            background-color: #777;
+            padding: 10px;
+            text-align: center;
+            color: white;
+        }
+
+        /* Responsive layout */
+        @media (max-width: 600px) {
+
+            nav,
+            article {
+                width: 100%;
+                height: auto;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h2 style="padding: 0% 0% 0% 5%;">Panquesitos Inc.</h2>
+    </header>
+
+    <section>
+        <nav>
+            <ul>
+                <li><a href="#">Pasteles</a></li>
+                <li><a href="#">Decoraciones</a></li>
+                <li><a href="#">Envios</a></li>
+            </ul>
+        </nav>
+
+        <div>
+            <h1>Pasteles</h1>
+            <p>&nbsp; </p>
+            <table>
+                <tr>
+                  <th><img src="https://cdn2.cocinadelirante.com/sites/default/files/styles/gallerie/public/images/2020/12/recetas-pasteles-vender-nortonrsx.jpg"></th>
+                  <th><img src="https://live.mrf.io/statics/i/ps/irecetasfaciles.com/wp-content/uploads/2019/09/pastel-tres-leches.jpg?width=1200&enable=upscale"></th>
+                  <th><img src="https://cdn2.cocinadelirante.com/sites/default/files/styles/gallerie/public/images/2021/04/pay-de-limon-helado.jpg" alt="pay de limon"></th>
+                </tr>
+                <tr>
+                  <td>Tiramisu</td>
+                  <td>Tres Leches</td>
+                  <td>Pay de limon</td>
+                </tr>
+                <tr>
+                  <td>$18 </td>
+                  <td>$20</td>
+                  <td>$12.5</td>
+                </tr>
+              </table>
+        </div>
+    </section>
+
+    <footer>
+        <p></p>
+    </footer>
+
+</body>
+
+</html>
